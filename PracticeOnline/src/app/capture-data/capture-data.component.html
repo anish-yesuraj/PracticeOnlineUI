@@ -1,0 +1,21 @@
+<h1>List of Questions</h1>
+<div>
+    <table border="1">
+        <tr>
+            <th>Q #</th>
+            <th>Question</th>
+            <th>Choices</th>
+        </tr>
+        <tr *ngFor = "let question of questions">
+            <td>{{question.id}}</td>
+            <td>{{question.text}}</td>
+            <td>
+                <table>
+                    <tr *ngFor = "let choice of question.answerChoices">
+                        <td>{{choice.text}}</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
