@@ -1,5 +1,5 @@
 export class AnswerChoice {
-    id : number;
+    id : string;
 	text : string;
 	tip : string;
 	result : boolean;

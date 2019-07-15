@@ -1,7 +1,7 @@
 import {AnswerChoice} from './AnswerChoice';
 
 export class Question {
-    id : number;
+    id : string;
     subject : string;
     topic : string;
 	level : string;
