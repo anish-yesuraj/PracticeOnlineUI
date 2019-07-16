@@ -1,21 +1,24 @@
-<h1>Display all Questions</h1>
 <div>
-    <table border="1">
-        <tr>
-            <th>Q #</th>
-            <th>Question</th>
-            <th>Choices</th>
-        </tr>
-        <tr *ngFor = "let question of questions">
-            <td>{{question.id}}</td>
-            <td>{{question.text}}</td>
-            <td>
-                <table>
-                    <tr *ngFor = "let choice of question.answerChoices">
-                        <td>{{choice.text}}</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Q #</th>
+                <th scope="col">Question</th>
+                <th scope="col">Choices</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let question of questions">
+                <th scope="row">{{question.id}}</th>
+                <td>{{question.text}}</td>
+                <td>
+                    <table>
+                        <tr *ngFor="let choice of question.answerChoices">
+                            <td>{{choice.text}}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </div>

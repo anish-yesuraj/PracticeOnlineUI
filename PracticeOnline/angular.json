@@ -24,9 +24,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/vendor/startbootstrap-free/css/sb-admin-2.css",
+              "src/vendor/fontawesome-free/css/all.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/vendor/jquery-free/jquery.js",
+              "src/vendor/bootstrap-free/js/bootstrap.bundle.js",
+              "src/vendor/jquery-easing-free/jquery.easing.js",
+              "src/vendor/startbootstrap-free/js/sb-admin-2.js"
+            ]
           },
           "configurations": {
             "production": {
