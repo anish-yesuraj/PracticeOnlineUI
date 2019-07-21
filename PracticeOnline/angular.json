@@ -5,7 +5,15 @@
   "projects": {
     "PracticeOnline": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "prefix": "app",
+          "styleext": "scss"
+        },
+        "@schematics/angular:directive": {
+          "prefix": "app"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,15 +32,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/vendor/startbootstrap-free/css/sb-admin-2.css",
-              "src/vendor/fontawesome-free/css/all.css"
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "src/assets/scss/ay-global.scss"
             ],
             "scripts": [
-              "src/vendor/jquery-free/jquery.js",
-              "src/vendor/bootstrap-free/js/bootstrap.bundle.js",
-              "src/vendor/jquery-easing-free/jquery.easing.js",
-              "src/vendor/startbootstrap-free/js/sb-admin-2.js"
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
+              "node_modules/arrive/src/arrive.js",
+              "node_modules/moment/moment.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.js",
+              "node_modules/chartist/dist/chartist.js"
             ]
           },
           "configurations": {
@@ -91,9 +102,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "src/assets/scss/ay-global.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
+              "node_modules/arrive/src/arrive.js",
+              "node_modules/moment/moment.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.js",
+              "node_modules/chartist/dist/chartist.js"
+            ]
           }
         },
         "lint": {
